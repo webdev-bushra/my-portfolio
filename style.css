@@ -1,0 +1,152 @@
+<style>
+body {
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1 {
+    color: aqua;
+    text-align: center;
+}
+.main{
+    width: 1000px;
+    height: 540px;
+    background-color: rgb(144, 0, 255);
+}
+.row1{
+    width: 1000px;
+    height: 80px;
+    background-color: rgb(20, 5, 32);
+    color: aqua;
+    font-size: 70px;
+    text-align: center;
+
+}
+.row2{
+    width: 1000px;
+    height: 40px;
+    background-color: #1fd434;
+     font-size: 30;
+    color: rgb(147, 25, 49);
+    float: left;
+
+}
+.row2-col1{
+    width: 200px;
+    height: 40px;
+    background-color: hsl(322, 74%, 48%);
+     font-size: 30px;
+    color: #195e93;
+    float: left;
+    text-align: center;
+
+}
+.row2-col2{
+    width: 200px;
+    height: 40px;
+    background-color: lab(76.13% -57.07 19.34);
+    color: #195e93;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+
+}
+.row2-col3{
+    width: 200px;
+    height: 40px;
+    background-color: hwb(50 13% 16%);
+    color: #195e93;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+
+}
+.row2-col4{
+    width: 200px;
+    height: 40px;
+    background-color: hsl(0, 74%, 48%);
+    color: #195e93;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+
+}
+.row2-col5{
+    width: 200px;
+    height: 40px;
+    background-color: lch(61.38% 66.15 66.62);
+    color: #195e93;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+}
+.row3{
+    width: 1000px;
+    height: 290px;
+    background-color: #ab1f67;
+}
+.row3-col1{
+    width: 400px;
+    height: 290px;
+    background-color: lch(75.59% 72.09 151.27);
+    color: #195e93;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+}
+.row3-col2{
+    width: 600px;
+    height: 290px;
+    background-color: lab(61.38% 26.26 60.72);
+    float: left;
+}
+.row3-col1-row1{
+    width: 400px;
+    height: 58px;
+    background-color: lch(66.05% 37 233.55);
+}
+.row3-col1-row2{
+    width: 400px;
+    height: 58px;
+    background-color: lab(61.38% 26.26 60.72);
+}
+.row3-col1-row3{
+    width: 400px;
+    height: 58px;
+    background-color: oklab(58.048% 0.22113 -0.01783);
+}
+.row3-col1-row4{
+    width: 400px;
+    height: 58px;
+    background-color: lab(74.97% -71.35 68.6);
+}
+.row3-col1-row5{
+    width: 400px;
+    height: 58px;
+    background-color: white;
+}
+.row4{
+    width: 1000px;
+    height: 50px;
+    background-color: hsl(278, 19%, 72%); /* 💡 Purple jesa shade */
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Arial, sans-serif;
+    float: left;
+}
+.row5{
+    width: 1000px;
+    height: 80px;
+    background-color: hwb(349 1% 91%);
+    color: #39FF14;
+    font-size: 50px;
+    text-align: center;
+    line-height: 80px;
+    float: left;
+}
+
+</style>
