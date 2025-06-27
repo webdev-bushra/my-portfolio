@@ -160,7 +160,7 @@ body {
     float: left;
 }
 .contact-form{
-    width: 500px;
+    width: 1000px;
     margin: auto;
     padding: 20px;
     border: 1px solid;
@@ -196,7 +196,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 button[type="submit"] :hover {
-      background-color: oklab(30.432% 0.00181 -0.17006);
+      background-color: oklch(53.082% 0.10044 90.731);
 }
   .hire-me {
   background-color: #ff4081; /* pinkish button */
@@ -217,7 +217,12 @@ button[type="submit"] :hover {
 .hire-me:hover {
   background-color: hsl(340, 80%, 28%); /* hover effect */
 }
-
+.intro{
+     color: hwb(269 14% 38%);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold; 
+}
 
 
 </style>
