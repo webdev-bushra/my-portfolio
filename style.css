@@ -8,6 +8,17 @@ body {
     color: aqua;
     text-align: center;
 }
+.p1 {
+   color: hsl(180, 30%, 28%);
+    text-align: center;
+    font-size: 30px; 
+}
+.top-section {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
 .main{
     width: 1000px;
     height: 540px;
@@ -148,5 +159,65 @@ body {
     line-height: 80px;
     float: left;
 }
+.contact-form{
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid;
+    border-radius:10px;
+    box-shadow: #ab1f67;
+}
+.Email-box{
+    background-color: #39FF14;
+    padding: 10px;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+email-box a{
+    text-decoration: none;
+    color: aqua;
+}
+
+form textarea{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid;
+    border-radius:5px;
+    resize: none;
+}
+button[type="submit"] {
+    background-color: hwb(349 1% 91%);
+    color: #39FF14;
+    padding: 10px;
+    border: 1px solid;
+    border-radius:5px;
+    cursor: pointer;
+}
+button[type="submit"] :hover {
+      background-color: oklab(30.432% 0.00181 -0.17006);
+}
+  .hire-me {
+  background-color: #ff4081; /* pinkish button */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px; /* gol corners */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  width: fit-content;
+  margin: 20px auto;
+  cursor: pointer;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.hire-me:hover {
+  background-color: hsl(340, 80%, 28%); /* hover effect */
+}
+
+
 
 </style>
