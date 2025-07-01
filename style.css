@@ -3,6 +3,36 @@ body {
     background-color: blueviolet;
     font-family: Arial, Helvetica, sans-serif;
 }
+.navbar {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f44336;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: orange;
+}
 
 .h1 {
     color: aqua;
@@ -166,9 +196,11 @@ body {
     border: 1px solid;
     border-radius:10px;
     box-shadow: #ab1f67;
+    text-align: center;
+    color: #ff4081;
 }
 .Email-box{
-    background-color: #39FF14;
+    background-color: #b7d2e8;
     padding: 10px;
     border: 1px solid;
     margin-bottom: 20px;
@@ -222,6 +254,33 @@ button[type="submit"] :hover {
     text-align: center;
     font-size: 30px;
     font-weight: bold; 
+}
+.faq {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.faq h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.faq-item {
+  background-color: #f5f5f5;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.faq-item h4 {
+  margin-bottom: 8px;
+  color: #ff4081;
+  font-size: 18px;
 }
 
 
