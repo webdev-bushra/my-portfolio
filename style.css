@@ -421,17 +421,7 @@ button[type="submit"] :hover {
     height: auto;
   }
 
-  .row3 {
-     width: 100%;   /* mobile me screen ke hisaab se adjust ho jaye */
-    height: auto;
-    display: flex;
-    flex-direction: column;  /* columns mobile me stack ho jaye */
-  }
-
-  .row3-col2 img {
-    width: 100%;
-    height: auto;  /* images mobile me fit ho jaye */
-  }
+  
 }
 
 
