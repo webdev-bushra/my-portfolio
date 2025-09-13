@@ -422,6 +422,8 @@ button[type="submit"] :hover {
   }
 
   .row3 {
+     width: 100%;   /* mobile me screen ke hisaab se adjust ho jaye */
+    height: auto;
     display: flex;
     flex-direction: column;  /* columns mobile me stack ho jaye */
   }
