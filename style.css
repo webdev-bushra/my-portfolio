@@ -323,7 +323,7 @@ left:-250px;
     float: left;
 }
 .contact-form{
-    width: 1000px;
+    width: 100%;
     margin: auto;
     padding: 20px;
     border: 1px solid;
@@ -414,6 +414,22 @@ button[type="submit"] :hover {
   margin-bottom: 8px;
   color: #ff4081;
   font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;   /* mobile me screen ke hisaab se adjust ho jaye */
+    height: auto;
+  }
+
+  .row3 {
+    display: flex;
+    flex-direction: column;  /* columns mobile me stack ho jaye */
+  }
+
+  .row3-col2 img {
+    width: 100%;
+    height: auto;  /* images mobile me fit ho jaye */
+  }
 }
 
 
