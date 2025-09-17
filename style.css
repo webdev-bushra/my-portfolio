@@ -395,14 +395,8 @@ form textarea{
   color: #ff4081;
   font-size: 18px;
 }
-@media screen and (max-width: 768px) {
-  .main {
-    width: 100%;   /* mobile me screen ke hisaab se adjust ho jaye */
-    height: auto;
-  }
-
   
-}
+
 *{
   box-sizing: border-box; 
 }
@@ -437,5 +431,41 @@ text-align:center;
   transform: scale(1.5); /* 1.5 times bada */
 }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .row3 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .row3-col1,
+  .row3-col2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .sticker {
+    grid-template-columns: 1fr 1fr; /* 2 stickers per row mobile pe */
+    width: 100%;
+  }
+
+  .sticker img {
+    width: 100%;
+  }
+}
 
 </style>
