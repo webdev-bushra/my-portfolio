@@ -1,10 +1,13 @@
-<style>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
 body {
   background-color: blueviolet;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden; /* ✅ Horizontal scroll disable */
 }
 
 /* ✅ Navbar */
@@ -16,6 +19,7 @@ body {
   align-items: center;
   padding: 10px 20px;
   font-size: 30px;
+  flex-wrap: wrap; /* ✅ nav wrap ho jaye */
 }
 
 .logo {
@@ -28,6 +32,7 @@ body {
   list-style: none;
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .nav-links li a {
@@ -35,10 +40,7 @@ body {
   color: white;
   font-weight: 500;
 }
-
-.nav-links li a:hover {
-  color: orange;
-}
+.nav-links li a:hover { color: orange; }
 
 .about, .education, .services, .contact {
   font-weight: bold;
@@ -75,7 +77,7 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 50px;
-  left: -15px;
+  left: 0; /* ✅ negative left remove */
   animation: sun 5s ease-in-out infinite;
 }
 .cloud1, .cloud2, .cloud3 {
@@ -83,15 +85,16 @@ body {
   height: 120px;
   position: absolute;
   opacity: 0.8;
+  max-width: 100%; /* ✅ overflow prevent */
 }
-.cloud1 { top: 20px; left: -10px; animation: cloud1 5s linear infinite; }
-.cloud2 { top: 30px; left: 500px; animation: cloud2 3s ease-in infinite; }
-.cloud3 { top: 20px; right: -10px; animation: cloud3 5s ease-out infinite; }
+.cloud1 { top: 20px; left: 0; animation: cloud1 5s linear infinite; }
+.cloud2 { top: 30px; left: 50%; animation: cloud2 3s ease-in infinite; }
+.cloud3 { top: 20px; right: 0; animation: cloud3 5s ease-out infinite; }
 
-@keyframes cloud1 { from { left: -250px; } to { left: 110px; } }
-@keyframes cloud2 { from { left: 250px; } to { left: 100%; } }
-@keyframes cloud3 { from { right: -250px; } to { right: 250px; } }
-@keyframes sun { from { left: -250px; } to { left: 100%; } }
+@keyframes cloud1 { from { left: -200px; } to { left: 100px; } }
+@keyframes cloud2 { from { left: 50%; } to { left: 100%; } }
+@keyframes cloud3 { from { right: -200px; } to { right: 200px; } }
+@keyframes sun { from { left: -120px; } to { left: 100%; } }
 
 .p1 {
   color: hsl(180, 30%, 28%);
@@ -106,7 +109,6 @@ body {
   padding: 20px;
 }
 
-/* ✅ Main Layout */
 .main {
   max-width: 1000px;
   width: 100%;
@@ -146,10 +148,6 @@ body {
   text-align: center;
 }
 
-.row3-col1 > div {
-  height: 58px;
-}
-
 .row4, .row5 {
   max-width: 1000px;
   width: 100%;
@@ -184,7 +182,8 @@ body {
 }
 
 form textarea {
-  width: 100px;
+  width: 100%;
+  max-width: 250px;
   height: 100px;
   margin: auto;
   padding: 10px;
@@ -208,9 +207,7 @@ form textarea {
   box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
   transition: background-color 0.3s ease;
 }
-.hire-me:hover {
-  background-color: hsl(340, 80%, 28%);
-}
+.hire-me:hover { background-color: hsl(340, 80%, 28%); }
 
 .intro {
   color: hwb(269 14% 38%);
@@ -219,7 +216,6 @@ form textarea {
   font-weight: bold;
 }
 
-/* ✅ FAQ Section */
 .faq {
   max-width: 700px;
   margin: 50px auto;
@@ -235,7 +231,6 @@ form textarea {
 }
 .faq-item h4 { margin-bottom: 8px; color: #ff4081; font-size: 18px; }
 
-/* ✅ Sticker Grid */
 .sticker {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -260,20 +255,15 @@ form textarea {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.sticker img.active {
-  transform: scale(1.5);
-}
+.sticker img.active { transform: scale(1.5); }
 
-/* ✅ Responsive */
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    font-size: 20px;
-  }
+  .navbar { flex-direction: column; font-size: 20px; }
   .logo { font-size: 30px; }
   .nav-links { flex-direction: column; gap: 10px; }
   .row1 { font-size: 40px; }
-  .row2 > div { flex: 1 1 50%; } /* 2 per row on mobile */
+  .row2 > div { flex: 1 1 50%; }
   .row3-col1, .row3-col2 { flex: 1 1 100%; }
 }
 </style>
+</head>
